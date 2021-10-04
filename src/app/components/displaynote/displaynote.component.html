@@ -1,4 +1,4 @@
-<!--<p>displaynote works!</p>-->
+
 <div class = "note-container">
     <div *ngFor = "let note of allNotes;" >
         <mat-card class = "card" [style.background-color]  =  "note.color">
@@ -14,7 +14,7 @@
                     class  =  "font n1" dir = "ltr" [style.background-color]  =  "colorData">
                     <h3>{{ note.description }}</h3>
                 </div>
-                <!-- [hidden] = "!iconVisible" -->
+                
                 <div class  =  "icon">
                     <app-icons [style.background-color]  =  "colorData" (transColor) = "receiveToUpdate($event)" [noteId] = "note.id"></app-icons> 
                 </div>
