@@ -17,12 +17,7 @@ export class AuthenticationGuard  implements CanActivate {
       this.router.navigate(['/login'])
       return false
     }
-    // if ((this.authservice.dashboardIn()){
-    //   return true;
-    // } else {
-    //   this.router.navigate(['/dashboard'])
-    //   return false
-    // }
+  
   }
   
 }
