@@ -5,9 +5,7 @@
     width: 100%;
 }
 .main{
-    //display: flex;
     flex-wrap: wrap;
-    //border-bottom: 1px solid #bfbebe; 
     width: 100%;
     height: 70px;
     
@@ -18,14 +16,12 @@
     color: rgba(194, 190, 190, 0.87);
     border-bottom: 1px solid rgb(218, 216, 216);
     width: auto;
-    //margin-bottom:12px; 
     position: -webkit-sticky;
     position: sticky; 
 }
 .buttonMenu{
     display: flex;
     flex-wrap: wrap;
-    //margin-top: -7px; 
     background-color: rgb(255, 255, 255);
     color: black;
     justify-content: center;
@@ -139,7 +135,6 @@
     max-height:35px; 
 }
 ::ng-deep .mat-menu-panel {
-    //min-width: none;
     max-width: 530px !important ;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -232,7 +227,7 @@
 }
 
 
-/// css nav
+
 .example-sidenav-container {
     flex: 2;
     background-color: white; 
