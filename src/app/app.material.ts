@@ -34,6 +34,7 @@ import { NgModule } from '@angular/core';
         MatCardModule,
         BrowserAnimationsModule,
         HttpClientModule,
+        
     ],
     exports:[
         MatInputModule,
