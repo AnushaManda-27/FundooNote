@@ -13,7 +13,7 @@ export class PinDisplayComponent implements OnInit {
 
   noteGen: any = [];
   updateData: any;
-  colorData: string = ''
+  colorData: string = '';
   tokenId = localStorage.getItem("token");
 
   constructor(public note: NoteserviceService, private dialog: MatDialog) { }
