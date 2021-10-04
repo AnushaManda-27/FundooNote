@@ -23,7 +23,7 @@ export class HttpServiceService {
     return this.httpClient.get(url, isHeaderRequired && tokenOption)
   }
   UpdateNote(id: any) {
-    console.log(id);
+    console.log(id)
     const data = {
       noteId:id.noteId,
       title: id.title,
