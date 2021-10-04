@@ -35,5 +35,6 @@ export class ResetPasswordComponent implements OnInit {
   colors =['color:#3566b8','color:#34a853', 'color:#ea4335','color:#3566b8','color:#fabb05','color: #34a853','color:#ea4335','color:#34a853','color:#fabb05','color:#3566b8','color:#e6c9a8']
   fontText =['F','u','n','d','o','o','n','o','t','e','s']
  
+  
 }
 
