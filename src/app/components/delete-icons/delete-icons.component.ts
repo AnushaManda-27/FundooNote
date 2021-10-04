@@ -16,7 +16,6 @@ export class DeleteIconsComponent implements OnInit {
   }
   restore(){
     console.log(this.noteId);
-    //alert(this.token_Id)
     let data = {
       noteIdList:[this.noteId],
       isDeleted:false
@@ -29,7 +28,6 @@ export class DeleteIconsComponent implements OnInit {
   }
   permanent_delete(){
     console.log(this.noteId);
-    // alert(this.token_Id)
     let data = {
       noteIdList:[this.noteId],
       isDeleted:false
