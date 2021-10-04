@@ -1,0 +1,232 @@
+
+.Body{
+    width: 90%;
+    position: absolute;
+    transform: translate(-1%,0%);
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    padding: 4%;
+    background: #fff;
+    margin: 10% 7px;
+    text-align: centre;
+  
+}
+.projectform{
+    display: flex;
+    justify-content: center;
+}
+.Project{
+    display: inline; 
+    
+    background-color: none;
+    
+}
+.projectName{
+
+    display: inline;
+    background-color:none;
+    
+    
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.Email{
+    display: flex;
+    flex-direction: column;
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+}
+.createAccount{
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: #3566b8;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 1% 12%;
+    cursor: pointer;
+    height: 40px;
+    font-weight: 500;
+    margin: 40px 10px 30px 200%;
+    
+}
+
+
+
+
+@media only screen and (min-width:768px){
+    .Body{
+        width: 50%;
+        padding: 5%;
+        margin: 30px 24%;
+    }
+    .Email{
+        padding: 3px;
+        font-size: 16px;
+    }
+    
+    .password{
+        padding: 3px;
+        font-size: 16px;
+    }
+    .button {
+        padding: 1% 20%;
+        font-size: 16px;
+        height: 40px;
+        margin: 40px 10px 20px 180%;  
+    }
+
+
+}
+
+@media only screen and (min-width:1000px){
+    .Body{
+        width: 30%;
+        padding: 1%;
+        margin: 70px 5px;
+        transform: translate(100%);
+    }
+    .Project{
+        margin-left: none;
+    }
+    .Email{
+        padding: 3px;
+        font-size: 16px;
+    }
+    
+    .password{
+        padding: 3px;
+        font-size: 16px;
+    }
+    .button {
+        padding: 1% 20%;
+        font-size: 16px;
+        height: 40px;
+        margin: 40px 10px 30px 190%;  
+    }
+
+
+}
+
+
+
+
+
+
+// .Body {
+//     background-color: #f7ebeb00;
+//     display: flex;
+//     height: 100vh;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .Form {
+//     min-height: 70%;
+//     width: 28%;
+//     background-color: #ffffff;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     border-radius: 8px;
+//     border: 1px solid #b9b3b3;
+//     box-shadow: 2px 2px 7px 0px;
+// }
+
+// .funDoText {
+//     margin-top: 40px;
+// }
+
+// .fText {
+//     margin-bottom: 12px;
+//     font: 500 20px/32px Roboto;
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .head {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .signInText {
+//     margin-bottom: 5px;
+// }
+
+// .inputBox {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 20px;
+// }
+
+// .inputContainer {
+//     width: 370px;
+// }
+
+// .forget{
+//     margin-top: -11px;
+//     color: rgb(105, 105, 105);
+//     cursor: pointer;
+// }
+
+// .footer{
+//     display: flex;
+//     flex-direction: row;
+//     align-items: baseline;
+//     padding: 20px 0px 0px 0px;
+// }
+
+// .createText{
+//     display: flex;
+//     color: #3566b8;
+//     width: 260px;
+//     cursor: pointer;
+//     font-weight: normal;
+// }
+
+// .button {
+//     background-color: #3566b8;
+//     color: rgb(255, 255, 255);
+//     border-radius: 5px;
+//     padding: 5px 35px;
+//     cursor: pointer;
+//     height: 40px;
+//     width: auto;
+//     font-weight: 500;
+// }
+
+// @media (max-width: 1126px) {
+//     .inputContainer {
+//         width: 270px;
+//     }
+
+//     .funDoText {
+//         margin-top: 20px;
+//     }
+
+//     .suggestion {
+//         margin: 0px 35px 0px 35px;
+//     }
+
+//     .footer{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         margin-bottom: 10px;
+//     }
+// }

@@ -1,0 +1,15 @@
+
+<form class="formCSS" [formGroup]="form"(ngSubmit)="submit()">
+    <div class="description"  [style.background-color] = "colorUpdate" >
+        <mat-dialog-content class="dialogContent">
+            <input class="inputBox" matInput formControlName="title" [style.background-color] = "colorUpdate"  >
+        </mat-dialog-content>
+        <mat-dialog-content class="dialogContent">
+            <input class="inputBox"  matInput  formControlName="description" [style.background-color] = "colorUpdate" >
+        </mat-dialog-content>
+        <mat-dialog-actions class="iconButton">
+            <app-icons (transColor)="receiveIconColorUpdate($event)" ></app-icons>
+            <button mat-button type="submit" mat-dialog-close (click)="reloadCurrentPage()" >close </button>
+        </mat-dialog-actions>
+    </div>
+</form>

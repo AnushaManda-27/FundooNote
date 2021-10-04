@@ -1,0 +1,51 @@
+<div class="Body">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="projectform">
+            <span>
+                <div class="Project" *ngFor="let fontcolor of fontcolors,let i=index">
+                    <h1 class="projectName" [style]=fontcolor>{{fonttexts[i]}}</h1>
+
+                </div>
+            </span>
+        </div>
+
+        <div class="header">
+            <h1 class="signInText"> Sign in </h1>
+            <h3 style="font-size: large; color: rgb(73, 72, 72);"> Use your Google Account </h3>
+        </div>
+        <div class="inputText">
+            <div class="Email">
+                <mat-form-field appearance="outline" class="inputContainer">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="userName" formControlName="userName">
+                    <mat-error *ngIf="form.controls.userName.errors">User Name is required !</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="password">
+                <!-- 2nd div for password  -->
+                <mat-form-field appearance="outline" class="inputContainer">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput placeholder="password" formControlName="password">
+                    <mat-error *ngIf="form.controls.password.errors">Password is required !</mat-error>
+                </mat-form-field>
+                <a routerLink="/forget-email">
+                    <h4 class="forget" style="color: #3566b8;"> Forget password?</h4>
+                </a>
+            </div>
+        </div>
+        <div class="notyourPC">
+            <h4 style="margin-top: 20px; color: rgb(105, 105, 105);">Not your computer? Use Guest mode to sign in
+                privately.</h4>
+        </div>
+        <div class="createAccount">
+            <div>
+                <a routerLink="/registration">
+                    <h4 class="createText">Create Account</h4>
+                </a>
+            </div>
+            <div>
+                <button type="submit" mat-raised-button color="primary" class="button">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

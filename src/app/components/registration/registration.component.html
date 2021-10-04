@@ -1,0 +1,78 @@
+<!--<p>registration works!</p>-->
+
+<div class ="Container">
+        <div class = "form_content" id ="box-1" >
+            <form [formGroup] ="registerForm" (ngSubmit) ="onSubmit()" class ="form_flex">
+                <span class ="title-align" ><div class ="Title" *ngFor ="let color of colors,let i =index" style ="display: inline;">
+                    <h1 [style] =color style=" display: inline; font-size: 30px; font-weight: lighter;">{{fontText[i]}}</h1>
+                    
+                </div></span>
+                <h1 class ="Heading">
+                    Create your Fundoo Account
+                </h1>
+                <div class ="Form">
+                    <div class ="flex-1" fxLayout ="row" fxFlexFill fxLayout.lt-sm ="column" fxLayoutGap ="16px">
+                        
+                            <mat-form-field appearance ="outline" class ="first_name">
+                                <mat-label>First Name</mat-label>
+                                <input matInput placeholder ="First Name" formControlName ="firstName" class ="input">
+                                <mat-error *ngIf ="registerForm.controls.firstName.errors">First Name is required !</mat-error>
+                            </mat-form-field>
+                        
+                            <mat-form-field appearance ="outline" class = "Last_name" >
+                                <mat-label>Last Name</mat-label>
+                                <input matInput placeholder ="last Name" formControlName ="lastName" class ="input">
+                                <mat-error *ngIf ="registerForm.controls.lastName.errors">Last Name is required !</mat-error>
+                            </mat-form-field>   
+                    </div>
+                    <div class ="flex-2">
+                        
+                            <mat-form-field appearance ="outline" class ="Email">
+                                <mat-label>Email</mat-label>
+                                    <input matInput placeholder ="Email" formControlName ="email" class ="input">
+                                    <mat-error *ngIf ="registerForm.controls.email.errors">email-Id is required !</mat-error>
+                                    <mat-hint style ="font-size: 14px;">You can use letters, numbers and periods</mat-hint>
+                            </mat-form-field>
+                        
+                        <div class ="button_hover_text">
+                            <button mat-button>Use my current email address instead</button>
+                        </div>
+                    </div>
+                    <div class ="flex-1" fxLayout ="row" fxFlexFill fxLayout.lt-sm ="column" fxLayoutGap ="16px">
+                        
+                            <mat-form-field appearance ="outline" class ="first_name">
+                                <mat-label>Password</mat-label>
+                                <input matInput placeholder ="Password" formControlName ="password" class ="input">
+                                <mat-error *ngIf ="registerForm.controls.password.errors">Password is required !</mat-error>
+                            </mat-form-field>
+                        
+                        
+                            <mat-form-field appearance ="outline" class ="Last_name" >
+                                <mat-label>Confirm</mat-label>
+                                <input matInput placeholder ="Confirm" formControlName ="confirmPassword" class ="input">
+                                <mat-error *ngIf ="registerForm.controls.confirmPassword.errors"> confirm Password is required !</mat-error>
+                            </mat-form-field>
+                    </div>
+                        <mat-hint class ="Text_two">Use 8 or more characters with a mix of letters,numbers & <br> <span class ="text_equal" >Symbols</span></mat-hint>
+                    
+                    <section class ="checkbox">
+                        <mat-checkbox class ="checkbox_margin">show Password</mat-checkbox>
+                    </section>
+                    <div class ="flex-4">
+                        <div class ="button">
+                            <button type ="submit" mat-raised-button color ="primary">Next</button>
+                        </div> 
+                        <div class ="button_hover">
+                            <button mat-button routerLink ="/login">Sign in instead</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+    <div class = "image" id = "box-2" >
+        <img src ="https://ssl.gstatic.com/accounts/signup/glif/account.svg" alt ="" width ="244" height ="244" class ="j9NuTc TrZEUc">
+        <div class ="img_content">
+            <p>One account.All of Google <br> <span style ="margin-left: 30px;" >working for you</span></p>
+        </div>
+    </div>
+</div>

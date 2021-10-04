@@ -1,0 +1,314 @@
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    //display: flex;
+    flex-wrap: wrap;
+    //border-bottom: 1px solid #bfbebe; 
+    width: 100%;
+    height: 70px;
+    
+}
+.mat-toolbar {
+    background:white;
+    height: 67px;
+    color: rgba(194, 190, 190, 0.87);
+    border-bottom: 1px solid rgb(218, 216, 216);
+    width: auto;
+    //margin-bottom:12px; 
+    position: -webkit-sticky;
+    position: sticky; 
+}
+.buttonMenu{
+    display: flex;
+    flex-wrap: wrap;
+    //margin-top: -7px; 
+    background-color: rgb(255, 255, 255);
+    color: black;
+    justify-content: center;
+}
+::ng-deep .mat-raised-button:not([class*="mat-elevation-z"]) {
+    box-shadow: none;  
+}
+.mat-raised-button:not([class*="mat-elevation-z"]) :hover{
+    border-radius: 50px;
+    height: 40px;
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.image{
+    margin-left:30px;
+    margin-top:10px;
+    margin-left: 2px;
+}
+.title{
+    width: 20%; 
+    background-color: rgb(255, 255, 255); 
+    padding: 15px 0px 12px 0px; 
+    font-size: x-large; 
+    color:rgb(124, 124, 124);
+    display: inline-block;
+    font-family: 'Product Sans',Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    padding-left: 8px;
+    position: relative;
+    top: -1.5px;
+    vertical-align: middle;
+    margin-left: 4px;
+    width:140px;
+}
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    width: 870px;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 20px; 
+    margin-left: 80px;
+    background-color: #f1f3f4;
+    border-radius: 10px;
+}
+.search:hover {
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }  
+  .icon{
+      display: none;
+  }
+.example-icon{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    width: 30px;
+    color:grey;
+    margin-top: -5px;
+}
+.searchInput{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 58%; 
+    outline: none;
+    padding: 0px 0px 0px 10px;
+    background: transparent;
+    border: none;
+    font: normal 16px Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-variant-ligatures: normal;
+    font-variant-ligatures: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+.utility{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 40px;
+    margin-left:40px;
+    flex-direction: row;  
+}
+.utility-item{
+    margin-left: 10px;
+}
+::ng-deep .matmenu{
+    min-width: 40px !important;
+    min-height: 140px !important;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+::ng-deep .setting-item{
+    max-height:35px;   
+}
+.user{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+    align-items: center;
+    margin-left: 45px;
+}
+.user-item{
+    max-height:35px; 
+}
+::ng-deep .mat-menu-panel {
+    //min-width: none;
+    max-width: 530px !important ;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 48px);
+    border-radius: 4px;
+    outline: 0;
+    min-height: 6px !important;
+}
+@media (max-width:886px){
+    .search-icon{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 200px;
+    }
+
+    .search{
+        background-color: white;
+        margin-left: 10px;;
+    }
+    .search:hover{
+        background: white;
+        box-shadow: none;
+    }
+    .searchInput{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        margin-left:150px;
+        margin-top: 8px;
+        color: grey;
+    }
+    .back-icon{
+        display:inline;
+        float:left;
+        margin-top: 10px;
+    }
+    .utility{
+        align-items: center;
+        height: 10px;
+        margin-left:15px;
+    }
+    .user{
+        align-items: center;
+        height: 40px;
+        margin-left:15px;
+    }
+    .search-toggle-item{
+        width:440px;
+        display:inline;
+        
+    }
+    ::ng-deep .search-toggle {
+        margin-top: -45px;
+        
+    } 
+}
+@media (max-width:414px){
+    .title{
+        display: none;
+    }
+    .utility{
+        align-items: center;
+        height: 40px;
+    }
+    .user{
+        align-items: center;
+        height: 40px;
+        margin-right: 0px;
+    }
+    .search{
+        margin-left: 0px;
+        width:75px;
+        padding: 0;
+    }
+    .search-icon{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 45px;
+    }
+    .search-toggle-item{
+        width:140px;
+        display:inline;
+        
+    }
+    ::ng-deep .search-toggle {
+        margin-top: -45px;
+        margin-left:-150px;   
+    }   
+}
+
+
+/// css nav
+.example-sidenav-container {
+    flex: 2;
+    background-color: white; 
+    margin-top:10px;
+    height: 88vh;
+  }
+  
+  .example-is-mobile .example-sidenav-container {
+    flex: 2 0 auto;   
+  }
+  
+  .btnPosition {
+    margin-left: 15px;
+    opacity: 0.6;
+  }
+  .button{
+    opacity: 0.6;
+  }
+  
+  .navName{
+    font-size : 16px;
+    margin-top:130px;
+    cursor : pointer;
+    display:inline;
+    margin-left: 20px;
+    margin-right: 100px;
+    width : 220px;
+    transform : 300ms ease-in-out;
+  }
+  
+  .navlist:hover {
+    background-color: #feefc3;
+    border-radius : 0 20px 20px 0;
+  }
+  
+  .menuBtn,
+  .navBtn {
+    transform: all 3s ease;
+    display: inline;
+    margin-top:5px;
+    margin-bottom: 5px;
+  }
+  
+  .menuBtn:hover {
+    background-color: rgba(153, 147, 147, 0.5);
+  }
+  
+  .mat-sidenav-content {
+    padding: 2.5%;
+   
+  }
+  
+  .center {
+    margin: auto 3%;
+ 
+  }
+  
+  .searchBar {
+    height : 45px;
+    border : 0.05px solid rgb(211, 205, 205);
+    border-radius : 8px;
+    padding-left : 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-left: 150px;
+    background-color: transparent;
+    background-color: #ebebeb;
+  }
+::ng-deep .mat-drawer-inner-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+::ng-deep .side-nav{
+    margin-top: 0px;;
+}
+ 

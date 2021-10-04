@@ -1,0 +1,24 @@
+<!--<p>displaynote works!</p>-->
+<div class = "note-container">
+    <div *ngFor = "let note of allNotes;" >
+        <mat-card class = "card" [style.background-color]  =  "note.color">
+            <div class = "mainBlock" >
+                <div id = "title" #title contenteditable = "false" aria-multiline = "true" role = "textbox" class = "font n1"
+                    dir = "ltr" (click) = "openAddDialog(note)" >
+                    <h2 style  =  "margin: 0px;">{{ note.title }}</h2>
+                    <span class  =  "material-icons pin" >
+                        push_pin
+                    </span>
+                </div>
+                <div id  =  "description" #description contenteditable  =  "false" aria-multiline  =  "true" role  =  "textbox"
+                    class  =  "font n1" dir = "ltr" [style.background-color]  =  "colorData">
+                    <h3>{{ note.description }}</h3>
+                </div>
+                <!-- [hidden] = "!iconVisible" -->
+                <div class  =  "icon">
+                    <app-icons [style.background-color]  =  "colorData" (transColor) = "receiveToUpdate($event)" [noteId] = "note.id"></app-icons> 
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

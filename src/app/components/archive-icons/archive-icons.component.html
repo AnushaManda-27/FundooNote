@@ -1,0 +1,39 @@
+
+<div style="display: flex; justify-content: flex; align-items: center; height: 30px;">
+    
+    <button mat-icon-button >
+        <mat-icon>add_alert</mat-icon>
+    </button>
+    
+    
+    <button mat-icon-button>
+        <mat-icon >perm_identity</mat-icon>
+    </button>
+
+    
+    <button mat-icon-button [matMenuTriggerFor]="aboveMenu"> 
+            <mat-icon>color_lens</mat-icon>
+    </button>
+    
+    <mat-menu  #aboveMenu="matMenu" yPosition="above">    
+        <app-colors (ItemEvent)="receiveColorCode($event)"></app-colors>
+    </mat-menu>
+    
+    <button mat-icon-button>
+        <mat-icon> insert_photo</mat-icon>
+    </button>
+    
+    
+    <button mat-icon-button (click) = "unarchivePage()" >
+        <mat-icon >unarchive</mat-icon>
+    </button>
+
+   
+    <button mat-icon-button [matMenuTriggerFor]="belowMenu" >
+        <mat-icon>more_vert</mat-icon>
+    </button>
+        <mat-menu #belowMenu="matMenu" yPosition="below" class="delete">    
+            <div class="deleteButton" mat-stroked-button  (click) = "delete()" style="height: 
+            40px;width:100px;">Delete</div>
+        </mat-menu>
+</div>

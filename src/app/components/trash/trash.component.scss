@@ -1,0 +1,98 @@
+.mainSection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 90px;
+    grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
+  }
+  .note-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    //margin-top: -10px;
+    //margin-left: -20px;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 8px;
+    transform: all 3s ease-in;
+    word-wrap:break-word;
+    grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
+    margin-left: 25px;
+    margin-top: 80px;
+    min-height: 120px;
+    padding-right: 10px;
+  }
+  
+  .icon {
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    margin-top: 30px;
+}
+  .card:not(:last-child){
+    margin-right:10px;
+  }
+  .card:hover .icon {
+   visibility: visible;
+  }
+  .card:focus-visible .icon {
+    visibility: visible;
+   }
+  
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  
+  mat-card-content p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  mat-icon {
+    font-size: 18px;
+  }
+  
+  .my-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-top: 4px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .my-button:hover {
+    background-color: rgba(153, 147, 147, 0.5);
+  }
+  #title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 30px;
+
+  }
+  .pin{
+    display: none;
+    color: rgba(153, 147, 147, 0.5);
+  }
+  .card:hover .pin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left:220px;
+    align-items: flex-start;
+    margin-top: -30px;
+    //background-color: rgba(153, 147, 147, 0.5);
+  }

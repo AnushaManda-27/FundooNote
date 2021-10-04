@@ -1,0 +1,621 @@
+.Container {
+    border: 1px solid rgb(228, 222, 222);
+    height: 670px; 
+    width: 60%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    align-self: center;
+    //background-color: darkred;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form_content {
+    height: 550px; 
+    width: 60%;
+    margin-top: 50px;
+    margin: auto;
+    margin-left: 50px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.form_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.form{
+    display: flex;
+    justify-content: stretch;
+}
+.image {
+    height: 550px; 
+    width: 40%;
+    float: right;
+    margin-top: 50px;
+    margin: auto;
+    margin-right: 50px;
+}
+#box-1{
+    flex:2;
+   flex-shrink: 2;
+   flex-basis: 220px;//background-color: darkslateblue;
+    
+}
+#box-2{
+    flex:1;
+   flex-shrink: 2;
+   flex-basis: 120px;
+    //background-color: deeppink;
+}
+
+.Title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+.flex-1 {
+    display: flex;
+    justify-content: stretch;
+    
+}
+.flex-2 {
+    justify-content: flex-start;
+    
+}
+h1 {
+    margin: 15px 0px 0px px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+.Heading{
+    margin: 15px 0px 0px px;
+    color:#202124;
+    font-size: x-large;
+    font-weight: normal;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+.first_name{
+    float: left;
+    line-height: 1.333;
+    height:10px;
+    width: 205px;
+    display: flex;
+    flex-direction: row;
+}
+.Last_name{
+    line-height: 1.333;
+    margin-left: 7px;
+    width: 205px;
+    display: flex;
+    
+}
+.Email{
+    width:420px;
+    margin-top: -2px;
+}
+
+.Text_two{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.checkbox{
+    margin: 12px 0;
+}
+.checkbox_margin{
+    margin-left: 5px;
+}
+.button{
+    float:right;
+    margin-top:0px;
+    margin-right:10px;
+}
+.button_hover_text{
+    color: royalblue;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    margin-bottom: 35px;
+
+}
+.button_hover{
+    color: royalblue;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    margin-bottom: 35px;
+    margin-top:0px;
+}
+img {
+    width: 244px;
+    aspect-ratio: auto 244 / 244;
+    height: 244px;
+    margin-top: 40%;
+}
+.img_content{
+    color: #202124;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    margin-left: 35px;
+    font-size: medium;
+}
+@media (max-width:1024px){
+    .Container {
+        border: 1px solid rgb(228, 222, 222);
+        height: 650px; 
+        width: 60%;
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+        align-self: center;
+        //background-color: darkred;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .form_content {
+        height: 550px; 
+        width: 60%;
+        margin-top: 50px;
+        margin: auto;
+        margin-left: 50px;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    .form_flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-grow: 0;
+        flex-shrink: 1; 
+        margin-left: -15px;       
+    }
+    .form{
+        display: flex;
+        justify-content: stretch;
+    }
+    .image {
+        height: 550px; 
+        width: 40%;
+        float: right;
+        margin-top: 50px;
+        margin: auto;
+        margin-right: 50px;
+    }
+    #box-1{
+        flex:2;
+       flex-shrink: 2;
+       flex-basis: 220px;//background-color: darkslateblue;
+        
+    }
+    #box-2{
+        flex:1;
+       flex-shrink: 2;
+       flex-basis: 120px;
+        //background-color: deeppink;
+    }
+    
+    .Title{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+    .flex-1 {
+        display: flex;
+        justify-content: stretch;
+        
+    }
+    .flex-2 {
+        justify-content: flex-start;
+        
+    }
+    h1 {
+        margin: 15px 0px 0px px;
+        font-size: x-large;
+        font-weight: bold;
+        font-family: 'Noto Sans HK', sans-serif;
+    }
+    .Heading{
+        margin: 15px 0px 0px px;
+        color:#202124;
+        font-size: x-large;
+        font-weight: normal;
+        font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    }
+    .first_name{
+        float: left;
+        line-height: 1.333;
+        height:10px;
+        width: 205px;
+        display: flex;
+        
+        flex-direction: row;
+    }
+    .Last_name{
+        line-height: 1.333;
+        margin-left: 7px;
+        width: 205px;
+        display: flex;
+        
+    }
+    .Email{
+        width:420px;
+        margin-top: -2px;
+    }
+    
+    .Text_two{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .checkbox{
+        margin: 12px 0;
+    }
+    .checkbox_margin{
+        margin-left: 5px;
+    }
+    .button{
+        float:right;
+        margin-top:0px;
+        margin-right:10px;
+    }
+    .button_hover_text{
+        color: royalblue;
+        letter-spacing: .0107142857em;
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 35px;
+    
+    }
+    .button_hover{
+        color: royalblue;
+        letter-spacing: .0107142857em;
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 35px;
+        margin-top:0px;
+    }
+    .image{
+        display: none;
+    }
+
+}
+@media (max-width:768px){
+    .Container {
+        border: 1px solid rgb(228, 222, 222);
+        height: 650px; 
+        width: 80%;
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+        align-self: center;
+        //background-color: darkred;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .form_content {
+        height: 550px; 
+        width: 100%;
+        margin-top: 50px;
+        margin: auto;
+        margin-left: 0px;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+    }
+    .form_flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+    .form{
+        display: flex;
+        justify-content: stretch;
+        width:100%
+    }
+    .image {
+        height: 550px; 
+        width: 40%;
+        float: right;
+        margin-top: 50px;
+        margin: auto;
+        margin-right: 50px;
+    }
+    #box-1{
+        flex:2;
+       flex-shrink: 2;
+       flex-basis: 220px;//background-color: darkslateblue;
+        
+    }
+    #box-2{
+        flex:1;
+       flex-shrink: 2;
+       flex-basis: 120px;
+        //background-color: deeppink;
+    }
+    
+    .Title{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+    .flex-1 {
+        display: flex;
+        justify-content: stretch;
+        
+    }
+    .flex-2 {
+        justify-content: flex-start;
+        
+    }
+    h1 {
+        margin: 15px 0px 0px px;
+        font-size: x-large;
+        font-weight: bold;
+        font-family: 'Noto Sans HK', sans-serif;
+    }
+    .Heading{
+        margin: 15px 0px 0px px;
+        color:#202124;
+        font-size: x-large;
+        font-weight: normal;
+        font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    }
+    .first_name{
+        float: left;
+        line-height: 1.333;
+        height:10px;
+        width: 205px;
+        display: flex;
+        flex-direction: row;
+    }
+    .Last_name{
+        line-height: 1.333;
+        margin-left: 7px;
+        width: 205px;
+        display: flex;
+        
+    }
+    .Email{
+        width:420px;
+        margin-top: -2px;
+    }
+    
+    .Text_two{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .checkbox{
+        margin: 12px 0;
+    }
+    .checkbox_margin{
+        margin-left: 5px;
+    }
+    .button{
+        float:right;
+        margin-top:0px;
+        margin-right:10px;
+    }
+    .button_hover_text{
+        color: royalblue;
+        letter-spacing: .0107142857em;
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 35px;
+    
+    }
+    .button_hover{
+        color: royalblue;
+        letter-spacing: .0107142857em;
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 35px;
+        margin-top:0px;
+    }
+    .image{
+        display: none;
+    }
+
+}
+@media (max-width:459px){
+    .Container{
+        width:100%;
+        //align-self: center;
+        //background-color: darkred;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 950px;
+        margin-top:-180px;
+    }
+    .form_content{
+        height: 650px; 
+        width: 60%;
+        margin-top: -50px;
+        margin: auto;
+        //margin-left: 30px;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;
+    
+    }
+    .title-align{
+        margin-left: 100px;
+    }
+    
+    .title {
+       
+        font-weight: lighter;
+
+    }
+    .title{
+        margin-top:0px;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .Heading{
+        justify-content: center;
+        margin-left: 28px;
+    }
+    .flex-1 {
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+    }
+    
+    .form{
+        width:100%;
+        justify-content: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first_name{
+        flex-wrap: wrap;
+        flex:2;
+        flex-shrink: 2;
+        flex-direction:column;
+        //margin-left: -3.5px;
+        align-items: stretch;
+        justify-content: center;
+        width:100%;  
+    }
+
+    
+    .Last_name{
+        flex-wrap: wrap;
+        flex:2;
+        flex-shrink: 2;
+        flex-direction:column;
+        align-items: stretch;
+        margin-left: -1.7px;
+        width:100%;
+        justify-content: center;
+    }
+    
+    .Email{
+        width:100%;
+        margin-top: -2px;
+        //margin-left: -10px;
+        justify-content: center;
+    }
+    .button_hover{
+        //margin-left: -30px;
+        justify-content: center;
+    }
+    .checkbox{
+        //margin-left: -19px;
+        justify-content: center;
+    }
+    .Text_two {
+       // margin-left: -12px;
+       justify-content: center;
+
+    }
+    .text_equal{
+        //margin-left: -6px;
+        justify-content: center;
+    }
+    .button_hover_text{
+        //margin-left: -19px;
+        justify-content: center;
+    }
+}
+@media (max-width:320px){
+    .Container{
+        width:100%;
+        align-self: center;
+        //background-color: darkred;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1050px;
+        margin-top:-250px;
+    }
+    .form_content{
+        height: 550px; 
+        width: 60%;
+        margin-top: -50px;
+        margin: auto;
+        margin-left: 50px;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;
+    
+    }
+    .flex-1 {
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+    }
+    
+    .form{
+        width:100%;
+        justify-content: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first_name{
+        flex-wrap: wrap;
+        flex:2;
+        flex-shrink: 2;
+        flex-direction:column;
+        margin-left: -10px;
+        align-items: stretch;
+        width:100%;  
+    }
+    
+    .Last_name{
+        flex-wrap: wrap;
+        flex:2;
+        flex-shrink: 2;
+        flex-direction:column;
+        align-items: stretch;
+        margin-left: -10px;
+        width:100%;
+    }
+    
+    .Email{
+        width:100%;
+        margin-top: -2px;
+        margin-left: -10px;
+    }
+    .button_hover{
+        margin-left: -30px;
+    }
+    .checkbox{
+        margin-left: -19px;
+    }
+    .Text_two {
+        margin-left: -12px;
+       font-size: 11px;
+       display: inline;
+
+    }
+    .text_equal{
+        margin-left: -12px;
+    }
+    .button_hover_text{
+        margin-left: -19px;
+    }
+}
+
+    

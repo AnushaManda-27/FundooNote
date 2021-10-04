@@ -1,0 +1,25 @@
+
+<div class="note-container">
+    <div *ngFor="let note of notes" >
+        <mat-card class="card" [style.background-color] = "note.color">
+            <div class="mainBlock" >
+                <div id="title" #title contenteditable="false" aria-multiline="true" role="textbox" class="font n1"
+                    dir="ltr"  >
+                    <h2 style="margin: 0px;">{{ note.title }}</h2>
+                    <span class="material-icons pin" >
+                        push_pin
+                    </span>
+                </div>
+                <div id="description" #description contenteditable="false" aria-multiline="true" role="textbox"
+                    class="font n1" dir="ltr" [style.background-color] = "note.color">
+                    <h3>{{ note.description }}</h3>
+                </div>
+            
+                <div class = "icon" >
+                    <app-archive-icons [style.background-color] = "note.color" [noteId]="note.id"></app-archive-icons>
+                
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

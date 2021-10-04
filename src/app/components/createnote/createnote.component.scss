@@ -1,0 +1,83 @@
+.head-center {
+    display: flex;
+    border-radius: 8px;
+    flex-direction: row;
+    background:#f1f3f4;
+    width: 35%;
+    height: 46px;
+    align-items: center;
+    margin-right: 70px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin-left: 150px;
+   // background-color:red ;
+    margin-top: 50px;
+    width:550px;
+}
+::ng-deep .text{
+    text-decoration: none;
+    resize: none;
+}
+
+.searchInput {
+    display: block;
+    width: 300px;
+    height: 48px;
+    outline: none;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px 0px 10px;
+}
+::ng-deep .panel{
+    width: 300px;
+    min-height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+.head-center:hover {
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    //box-shadow: 0 1px 1px o rgba(65,69,73,0.3),0 1px 3px 1px rgba(65,69,73,0.15)
+  }
+.head-right {
+    background-color: rgb(255, 255, 255, 1); 
+    width: 25%;
+    height: 6vh;
+    display: flex;
+    //justify-content: flex-end;
+    align-items: center;
+}
+.footer{
+    border-top-style: none;
+    padding: 0px;
+}
+::ng-deep .mat-expansion-panel-header-title {
+    display: flex;
+    flex-grow: 1;
+   // float:right;
+    margin-right: 16px;
+    justify-content: flex-start;
+
+}
+.mat-expansion-panel-header-description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+.mat-expansion-panel:hover{
+    background-color: white;
+    text-decoration: none;
+}
+.matInput{
+    border-bottom: white;
+}
+@media screen and (max-width: 414px)
+{
+    ::ng-deep .panel{
+        width: 350px;min-height: 40px;
+    }
+    .head-center{
+        width:350px;
+    }
+}

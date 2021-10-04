@@ -1,0 +1,27 @@
+.description {
+    width: 600px;
+    background-color: colorUpdateData;
+}
+.dialogContent {
+    height: 6vh;
+    width: 78vh;
+    margin: 0;
+    padding: 3px 3px;
+}
+.iconButton {
+    justify-content: space-between;
+    padding: 8px 10px;
+
+}
+::ng-deep .mat-dialog-container {
+    border-radius: 10px;
+}
+.inputBox {
+    line-height: 40px;
+    width: 96%;
+    border: transparent;
+    padding: 0px 0px 0px 20px;
+}
+.formpin{
+    margin: -24px;
+}

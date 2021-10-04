@@ -1,0 +1,122 @@
+
+<body class="body">
+    <div class="main">
+
+        <mat-toolbar class="sticky-header">
+            <button class=" buttonMenu button" type="button" mat-raised-button mat-icon-button
+                aria-label="Example icon button with a menu icon" (click)="isExpandable=!isExpandable">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span class="image"><img src="../assets/kepp_logo.png"></span>
+            <span class="title">FundooNotes</span>
+            <form class="search">
+                <button mat-icon-button class="example-icon search-icon" mat-icon-button [matMenuTriggerFor]="menu1">
+                    <mat-icon style="margin:0px;">search</mat-icon>
+                </button>
+                <mat-menu #menu1="matMenu" class="search-toggle" xPosition="after" style="width:800px">
+                    <span><span class="material-icons back-icon">
+                            keyboard_backspace
+                        </span><input mat-menu-item class="search-toggle-item" aria-label="Search" type="text"
+                            placeholder="Search"></span>
+                </mat-menu>
+                <input class="searchInput" aria-label="Search" type="text" placeholder="Search">
+            </form>
+            <div class="utility">
+                <button mat-icon-button class="example-icon refresh utility-item"
+                    aria-label="Example icon-button with refresh icon">
+                    <mat-icon>refresh</mat-icon>
+                </button>
+                <button mat-icon-button class="example-icon menu-icon utility-item"
+                    aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <button mat-icon-button class="example-icon settings-icon utility-item" mat-icon-button
+                    [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>settings</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu" class="matmenu" yPosition="below">
+                    <button mat-menu-item class="setting-item">
+                        <span>Settings</span>
+                    </button>
+                    <button mat-menu-item class="setting-item">
+                        <span>send feedback</span>
+                    </button>
+                    <button mat-menu-item class="setting-item">
+                        <span>Help</span>
+                    </button>
+                    
+
+                </mat-menu>
+            </div>
+            <div class="user">
+                
+                <button mat-icon-button class="example-icon settings-icon utility-item" mat-icon-button
+                    [matMenuTriggerFor]="menuuser" aria-label="Example icon-button with a menu">
+                    <mat-icon>person</mat-icon>
+                </button>
+                <mat-menu #menuuser="matMenu" class="matmenu" yPosition="below">
+                    <button mat-menu-item class="sentting-item" (click)="logout()">
+                        <span>Log out</span>
+                    </button>
+                </mat-menu>
+            </div>
+        </mat-toolbar>
+
+        <!--side nav-->
+        <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+            <mat-sidenav opened="true" mode="side" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+                <mat-nav-list>
+                    <div class="navlist active" fxLayout="row" (mouseover)="isExpandable=true"
+                        fxLayoutAlign="start center" fxLayoutGap="20px" mat-list-item (click)="noteDisplay()">
+                        <button class="navBtn btnPosition" mat-icon-button>
+                            <span class="material-icons side-icon" style="position:steady">
+                                lightbulb
+                            </span>
+                        </button>
+                        <p class="navName  " *ngIf="isExpandable">Notes</p>
+                    </div>
+                    <div class="navlist" fxLayout="row" fxLayoutAlign="start center" routerLink='home/reminder'
+                        (mouseover)="isExpandable=true" fxLayoutGap="20px" mat-list-item routerLink="/home/reminder">
+                        <button class="navBtn btnPosition" mat-icon-button (mouseover)="isExpandable=true">
+                            <mat-icon class="side-icon"> notifications_none</mat-icon>
+                        </button>
+                        <p class="navName " *ngIf="isExpandable">Reminder</p>
+                    </div>
+                    <div class="navlist" fxLayout="row" fxLayoutAlign="start center" (mouseover)="isExpandable=true"
+                        fxLayoutGap="20px" mat-list-item (click)="openDialog()">
+                        <button class="navBtn btnPosition" mat-icon-button (mouseover)="isExpandable=true">
+                            <mat-icon class="side-icon">create</mat-icon>
+                        </button>
+                        <p class="navName " *ngIf="isExpandable">Edit Labels</p>
+                    </div>
+                    <div class="navlist" fxLayout="row" fxLayoutAlign="start center" (mouseover)="isExpandable=true"
+                        fxLayoutGap="20px" mat-list-item (click)="archieveDisplay()">
+                        <button class="navBtn btnPosition" mat-icon-button (mouseover)="isExpandable=true">
+                            <mat-icon class="side-icon">archive</mat-icon>
+                        </button>
+                        <p class="navName " *ngIf="isExpandable">Archive</p>
+                    </div>
+                    <div class="navlist" fxLayout="row" fxLayoutAlign="start center" (mouseover)="isExpandable=true"
+                        fxLayoutGap="20px" mat-list-item (click)="trashDisplay()">
+                        <button class="navBtn btnPosition" mat-icon-button (mouseover)="isExpandable=true">
+                            <mat-icon class="side-icon">delete_outline</mat-icon>
+                        </button>
+                        <p class="navName" *ngIf="isExpandable">Trash</p>
+                    </div>
+                </mat-nav-list>
+            </mat-sidenav>
+
+            <mat-sidenav-content class="side-nav">
+                <div style="width: 100%; height:100vh;display: flex;justify-content: center;align-items: flex-start;"
+                    [ngSwitch]="switchClick">
+                    <app-notes *ngSwitchCase="1" style="height: 100%;"></app-notes>
+                    <app-trash *ngSwitchCase="3" style="height: 30%;"></app-trash>
+                    <app-archive *ngSwitchCase="4" style="height: 100%;"></app-archive>
+                </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+
+    </div>
+</body>
+
+   

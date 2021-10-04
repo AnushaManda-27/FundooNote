@@ -1,0 +1,33 @@
+.deleteButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:medium;
+}
+
+.mat-action-row {
+    border-top-style:solid;
+    border-top-width:1px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding:16px 8px 16px 24px;
+    height:10px;
+    width: 20px;
+
+   }
+.mat-expansion-panel-header.mat-expanded {
+    height: 44px;
+}
+.mat-icon {
+    font-size: 20px;
+    color:grey;
+  }
+  ::ng-deep .delete{
+    min-height: 5vh !important;
+    min-width: 20vh;
+    //min-width: 0px !important;
+    //min-height: 0px !important;
+    border-radius: 5px;
+}
+
