@@ -6,6 +6,7 @@ import { NoteserviceService } from 'src/app/services/noteservice.service';
   templateUrl: './trash.component.html',
   styleUrls: ['./trash.component.scss']
 })
+
 export class TrashComponent implements OnInit {
   @Input() notes: any = [];
   trashNote:any=[];
