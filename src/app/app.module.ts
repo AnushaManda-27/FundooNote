@@ -34,7 +34,6 @@ import { UnpinIconComponent } from './components/unpin-icon/unpin-icon.component
     ForgetPasswordComponent,
     ResetPasswordComponent,
     DashboardComponent,
-    // HeaderComponent,
     CreatenoteComponent,
     NotesComponent,
     EditComponent,
