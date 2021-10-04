@@ -54,7 +54,7 @@ export class IconsComponent implements OnInit {
     }
     console.log("note and boolean ", dataArchive);
     this.note.archivedNotes(dataArchive, this.token_Id).subscribe((dataArchive)=>{
-      console.log("Archieve Successfully", dataArchive);
+      console.log("Archieve Successfull", dataArchive);
     });
   }
 
