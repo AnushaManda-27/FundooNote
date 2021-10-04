@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpServiceService } from './http-service.service';
 import { environment } from '../../environments/environment';
-// import { HttpHeaders } from '@angular/common/http';
+
 
 
 @Injectable({
@@ -32,9 +32,7 @@ export class UserServiceService {
   loggedIn () {
     return !!localStorage.getItem('token')
   } 
-  // dashboardIn() {
-  //   return !!localStorage.getitem('token')
-  // }
+ 
   logout() {
     localStorage.removeItem('token');
   }
