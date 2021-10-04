@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'forget-password', component: ForgetPasswordComponent },
   { path: 'resetpassword/:token', component: ResetPasswordComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate : [AuthenticationGuard], children: [
+    
     { path: '', redirectTo: "notes", pathMatch: "full" },
     { path: 'notes', component: NotesComponent },
     { path: 'archeive', component: ArchiveComponent },
