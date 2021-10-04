@@ -13,7 +13,7 @@ export class ForgetPasswordComponent implements OnInit {
   constructor(private service: UserServiceService) { }
 
   form = new FormGroup({
-    userName: new FormControl('', [Validators.required, Validators.email, Validators.minLength(3)]),
+    userName: new FormControl("", [Validators.required, Validators.email, Validators.minLength(3)]),
   })
 
   fontcolors = ['color:#800080', 'color:#FBBC04', 'color:#f28b82', 'color:#fbbc04', 'color:#fff475', 'color:#ccff90', 'color:#a7ffeb', 'color:#cbf0f8', 'color:#aecbfa', 'color:#fdcfe8', 'color:#e6c9a8']
