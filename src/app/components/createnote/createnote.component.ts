@@ -33,13 +33,7 @@ export class CreatenoteComponent implements OnInit {
       console.log("API " + dataColor)
     })
   }
-  // pin() {
-  //   console.log(this.noteI)
-  //   console.log("note", dataPin);
-  //   this.service.pinedNote(dataPin, this.tokenId).subscribe((dataPin)=>{
-  //     console.log("pin successfull", dataPin);
-  //   });
-  // }
+
 
   submit=() => {
     if(this.form.valid){
@@ -57,10 +51,8 @@ export class CreatenoteComponent implements OnInit {
     });
 
     
-    //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.form.value))
-    
   }
-  //else(alert("please Enter some notes"))
+  
 }
 
  
