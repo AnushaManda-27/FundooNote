@@ -3,11 +3,13 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NoteserviceService } from 'src/app/services/noteservice.service';
+
 @Component({
   selector: 'app-update',
   templateUrl: './update.component.html',
   styleUrls: ['./update.component.scss']
 })
+
 export class UpdateComponent implements OnInit {
   title: any;
   description: any;
