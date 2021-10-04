@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("token", data["id"]);
         this.router.navigate(['/dashboard']);
       
-      }, error => {
+      }, (error) => {
         console.log("error in login page",error);
       });
     }
