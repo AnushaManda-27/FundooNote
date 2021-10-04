@@ -8,6 +8,7 @@ import { NoteserviceService } from 'src/app/services/noteservice.service';
   templateUrl: './pin-update.component.html',
   styleUrls: ['./pin-update.component.scss']
 })
+
 export class PinUpdateComponent implements OnInit {
 
   title: any;
