@@ -35,6 +35,7 @@ export class PinIconComponent implements OnInit {
       noteIdList: [this.noteId],
       "isPined": true
     }
+    
     console.log("note and boolean ", dataPin);
     this.note.pinedNote(dataPin, this.token_Id).subscribe((dataPin) => {
       console.log("Pined Successfully", dataPin);
