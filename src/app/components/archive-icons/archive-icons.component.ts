@@ -45,7 +45,7 @@ export class ArchiveIconsComponent implements OnInit {
     console.log("note and boolean ", dataArchive);
     this.note.archivedNotes(dataArchive, this.token_Id).subscribe((dataArchive) => {
       console.log("Unarchieve Successfully", dataArchive);
-    }, (error) => {
+    }, error => {
       console.log("archive failed");
     });
   }
