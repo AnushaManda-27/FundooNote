@@ -13,7 +13,7 @@ import { UserServiceService } from 'src/app/services/user-service.service';
 
 export class DashboardComponent implements OnInit {
 
-  switchClick = 1
+  switchClick = 1;
   isExpandable: boolean = false;
   mobileQuery: MediaQueryList;
   public token: any;
