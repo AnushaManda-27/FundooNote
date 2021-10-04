@@ -10,7 +10,6 @@
     box-sizing: border-box;
     border: 1px solid transparent;
     margin-left: 150px;
-   // background-color:red ;
     margin-top: 50px;
     width:550px;
 }
@@ -36,14 +35,12 @@
 .head-center:hover {
     background: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    //box-shadow: 0 1px 1px o rgba(65,69,73,0.3),0 1px 3px 1px rgba(65,69,73,0.15)
   }
 .head-right {
     background-color: rgb(255, 255, 255, 1); 
     width: 25%;
     height: 6vh;
     display: flex;
-    //justify-content: flex-end;
     align-items: center;
 }
 .footer{
@@ -53,7 +50,6 @@
 ::ng-deep .mat-expansion-panel-header-title {
     display: flex;
     flex-grow: 1;
-   // float:right;
     margin-right: 16px;
     justify-content: flex-start;
 
