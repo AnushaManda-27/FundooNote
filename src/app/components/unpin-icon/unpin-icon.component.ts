@@ -7,6 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './unpin-icon.component.html',
   styleUrls: ['./unpin-icon.component.scss']
 })
+
 export class UnpinIconComponent implements OnInit {
 
   @Input() noteId: any;
